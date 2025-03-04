@@ -12,9 +12,11 @@ const tierText = document.getElementById("tier");
 const errDisplay = document.getElementById("errDisplay");
 
 function superScript(num){
-  for (let i = 0; i < nums.length; i++) {
-    if (String(num).includes(nums[i])){
-      num = String(num).replace(nums[i], superNums[i])
+  while (/\d/.test(num)){
+    for (let i = 0; i < nums.length; i++) {
+      if (String(num).includes(nums[i])){
+        num = String(num).replace(nums[i], superNums[i])
+      }
     }
   }
   return num;
