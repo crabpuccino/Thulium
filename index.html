@@ -3,7 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="element.css">
+  <link rel="stylesheet" href="/element.css">
+  <style>
+    :root {
+      --prime-color: #21212c;
+      --frist-color: #6272a4;
+      --text-prime: #F8F8F2;
+    }
+
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--prime-color);
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+    p {
+      color: var(--text-prime);
+    }
+
+    .frist {
+      justify-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .num-geter {
+      display: block;
+      margin: 16px;
+      width: 80%;
+      min-width: 300px;
+      height: 4vh;
+      min-height: 20px;
+      background-color: var(--frist-color);
+      color: var(--prime-color);
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      text-align: center;
+      transition: all 0.15s;
+    }
+    .num-geter:hover {
+      box-shadow: rgba(0,0,0,0.15) 15px 15px;
+    }
+    .num-geter:focus {
+      box-shadow: rgba(0,0,0,0.15) 15px 15px;
+    }
+
+    .go {
+      margin: 20px;
+      width: 10vw;
+      min-width: 40px;
+      height: 4vh;
+      min-height: 20px;
+      background-color: var(--frist-color);
+      color: var(--prime-color);
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      transition: all 0.15s;
+    }
+    .go:hover {
+      background-color: var(--prime-color);
+      color: var(--frist-color);
+      border: solid var(--frist-color) 2px;
+      cursor: pointer;
+    }
+    .go:active {
+      opacity: 0.5;
+    }
+
+    .internal {
+      margin-top: 20px;
+    }
+
+    .labelization {
+      text-align: left;
+      margin: 10px;
+    }
+
+    .err {
+      text-align: left;
+      color: #ff1414;
+    }
+
+    .arranger {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title {
+      color: var(--text-prime);
+      display: inline;
+      padding: 11px;
+      margin-top: 26px;
+      margin-bottom: 26px;
+    }
+
+    .swap {
+      background-color: #4A86E8;
+      align-self: center;
+      color: var(--text-prime);
+      border: none;
+      height: 4vh;
+      min-height: 20px;
+      max-height: 30px;
+      width: 10vw;
+      min-width: 50px;
+      max-width: 65px;
+      border-radius: 10px;
+      transition: all 0.15s;
+    }
+    .swap:hover {
+      cursor: pointer;
+      border: #4A86E8 solid 2px;
+      background-color: var(--prime-color);
+      color: #4A86E8;
+    }
+
+    .imgMain{
+      height: 500px;
+      width: 400px;
+    }
+  </style>
   <title>Thulium</title>
 </head>
 <body>
