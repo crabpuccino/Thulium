@@ -1,13 +1,15 @@
 :root {
-  --prime-color: #21212c;
-  --frist-color: #6272a4;
-  --text-prime: #F8F8F2;
+  --prime-color: #2C3E50;
+  --frist-color: #1ABC9C;
+  --text-prime: #ECF0F1;
+  --text-sec: #BDC3C7;
 }
 
 
 *{
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -34,12 +36,15 @@ p {
   height: 4vh;
   min-height: 20px;
   background-color: var(--frist-color);
-  color: var(--prime-color);
+  color: var(--text-prime);
   font-weight: bold;
   border: none;
   border-radius: 20px;
   text-align: center;
   transition: all 0.15s;
+}
+.num-geter::placeholder {
+  color: var(--text-prime);
 }
 .num-geter:hover {
   box-shadow: rgba(0,0,0,0.15) 15px 15px;
@@ -55,7 +60,7 @@ p {
   height: 4vh;
   min-height: 20px;
   background-color: var(--frist-color);
-  color: var(--prime-color);
+  color: var(--text-prime);
   font-weight: bold;
   border: none;
   border-radius: 10px;
@@ -91,17 +96,26 @@ p {
 }
 
 .title {
+  background-color: var(--frist-color);
   color: var(--text-prime);
-  display: inline;
   padding: 11px;
   margin-top: 26px;
   margin-bottom: 26px;
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  min-width: 128px;
+  direction: ltr;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .swap {
-  background-color: #4A86E8;
+  background-color: var(--frist-color);
   align-self: center;
   color: var(--text-prime);
+  font-weight: bold;
   border: none;
   height: 4vh;
   min-height: 20px;
@@ -114,12 +128,24 @@ p {
 }
 .swap:hover {
   cursor: pointer;
-  border: #4A86E8 solid 2px;
+  border: var(--frist-color) solid 2px;
   background-color: var(--prime-color);
-  color: #4A86E8;
+  color: var(--frist-color);
+}
+.swap:active {
+  opacity: 0.6;
 }
 
-.imgMain{
-  height: 500px;
-  width: 400px;
+.imgIcon{
+  display: inline;
+  height: 30px;
+  width: 32px;
+}
+
+.titleText {
+  display: inline;
+}
+
+span {
+  color: var(--text-sec);
 }
