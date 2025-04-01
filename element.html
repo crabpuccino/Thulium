@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/icons/brandparent.png">
+  <link rel="stylesheet" href="element.css">
+  <title>Thulium</title>
+</head>
+<body>
+
+  <div class="load"></div>
+
+  <input type="checkbox" id="sidebar-active">
+  <div class="nav-menu">
+    <label for="sidebar-active">
+      <img src="images/icons/close.png" alt="x" height="20" width="20">
+    </label>
+    <a href="index.html" class="pages-mb">Home</a>
+    <a href="#" class="pages-mb">Support</a>
+    <a href="table.html" class="pages-mb">Table</a>
+    <a href="#" class="pages-mb">Thulium</a>
+  </div>
+  <label for="sidebar-active" class="over-lay"></label>
+
+  <div class="mainTitle">
+      <a class="homing" href="index.html">
+          <img src="images/icons/brandparent.png" alt="69" height="55">
+          <p>THULIUM</p>
+      </a>
+    <div class="mb-nav">
+      <label for="sidebar-active">
+        <img src="images/icons/menu.png" alt="" height="30" width="30">
+      </label>
+    </div>
+    <div class="pc-nav">
+      <a href="index.html" class="pages">Home</a>
+      <a href="#" class="pages">Support</a>
+      <a href="table.html" class="pages">Table</a>
+      <a href="#" class="pages">Thulium</a>
+    </div>
+  </div>
+
+  <div class="frist">
+    <img src="images/icons/blank.png" alt="" class="mainImg">
+    <input type="number" class="num-geter" id="electrons" placeholder="Enter the atomic number....">
+    <p class="err" id="errDisplay"></p>
+    <button class="go" id="eventHorizen">Go</button>
+  </div>
+
+  <div class="title">
+    <img src="images/icons/table.png" alt="" class="imgIcon">
+    <p class="titleText">PeriodicTable properties</p>
+  </div>
+  <div class="arranger">
+    <p class="internal" id="guts">‎</p>
+    <button class="swap" id="swap">Swap!</button>
+    <p class="labelization">Row: <span class="sub-text" id="row"></span></p>
+    <p class="labelization">Column(old): <span class="sub-text" id="oldCo"></span></p>
+    <p class="labelization">Column(modern): <span class="sub-text" id="newCo"></span></p>
+    <p class="labelization">Tier: <span class="sub-text" id="tier"></span></p>
+    <p class="labelization">Series: <span class="sub-text" id="group"></span></p>
+  </div>
+
+  <div class="title">
+    <img src="images/icons/molecule.png" alt="" class="imgIcon">
+    <p class="titleText">Overview</p>
+  </div>
+  <div class="arranger">
+  <p class="labelization">Latin Name: <span class="sub-text" id="prop0"></span></p>
+  <p class="labelization">English Name: <span class="sub-text" id="prop1"></span></p>
+  <p class="labelization">Allotrope Names: <span class="sub-text" id="prop2"></span></p>
+  <p class="labelization">Alternate Names: <span class="sub-text" id="prop3"></span></p>
+  <p class="labelization">Arabic Name: <span class="sub-text" id="prop4"></span></p>
+  <p class="labelization">Element Symbol: <span class="sub-text" id="prop5"></span></p>
+  <p class="labelization">Discovery Year: <span class="sub-text" id="prop6"></span></p>
+  <p class="labelization">Country of Discovery: <span class="sub-text" id="prop7"></span></p>
+  <p class="labelization">Scientists: <span class="sub-text" id="prop8"></span></p>
+  </div>
+  <div class="title">
+    <img src="images/icons/flame.png" alt="" class="imgIcon">
+    <p class="titleText">Thermal properties</p>
+  </div>
+  <div class="arranger">
+    <p class="labelization">State(at STP): <span class="sub-text" id="state"></span></p>
+    <p class="labelization">Melting Point: <span class="sub-text" id="prop9"></span></p>
+    <p class="labelization">Boiling Point: <span class="sub-text" id="prop10"></span></p>
+    <p class="labelization">Heat of Vaporization: <span class="sub-text" id="prop11"></span></p>
+    <p class="labelization">Heat of Fusion: <span class="sub-text" id="prop12"></span></p>
+    <p class="labelization">Specific Heat: <span class="sub-text" id="prop13"></span></p>
+    <p class="labelization">Thermal Expansion: <span class="sub-text" id="prop14"></span></p>
+    <p class="labelization">Thermal Conductivity: <span class="sub-text" id="prop15"></span></p>
+    <p class="labelization">Critical Temperature: <span class="sub-text" id="prop16"></span></p>
+    <p class="labelization">Curie Point: <span class="sub-text" id="prop17"></span></p>
+  </div>
+  <div class="title">
+    <img src="images/icons/atom.png" alt="" class="imgIcon">
+    <p class="titleText">Atomic properties</p>
+  </div>
+  <div class="arranger">
+    <p class="labelization">Protons: <span class="sub-text" id="prop18"></span></p>
+    <p class="labelization">Neutrons: <span class="sub-text" id="prop19"></span></p>
+    <p class="labelization">ُElement Mass: <span class="sub-text" id="prop20"></span></p>
+    <p class="labelization">Density: <span class="sub-text" id="prop21"></span></p>
+    <p class="labelization">Liquid Density: <span class="sub-text" id="prop22"></span></p>
+    <p class="labelization">Atomic Radius: <span class="sub-text" id="prop23"></span></p>
+    <p class="labelization">Covalent Radius: <span class="sub-text" id="prop24"></span></p>
+    <p class="labelization">Van Der Waals Radius: <span class="sub-text" id="prop25"></span></p>
+    <p class="labelization">Molar Volume: <span class="sub-text" id="prop26"></span></p>
+    <p class="labelization">Critical Pressure: <span class="sub-text" id="prop27"></span></p>
+    <p class="labelization">Resistivity: <span class="sub-text" id="prop28"></span></p>
+    <p class="labelization">Brinell Hardness: <span class="sub-text" id="prop29"></span></p>
+    <p class="labelization">Mohs Hardness: <span class="sub-text" id="prop30"></span></p>
+    <p class="labelization">Vickers Hardness: <span class="sub-text" id="prop31"></span></p>
+    <p class="labelization">Bulk Modulus: <span class="sub-text" id="prop32"></span></p>
+    <p class="labelization">Young Modulus: <span class="sub-text" id="prop33"></span></p>
+    <p class="labelization">Shear Modulus: <span class="sub-text" id="prop34"></span></p>
+    <p class="labelization">Speed of Sound Transmision: <span class="sub-text" id="prop35"></span></p>
+  </div>
+  <div class="title">
+    <img src="images/icons/biohazard-sign.png" alt="" class="imgIcon">
+    <p class="titleText">Reactivity</p>
+  </div>
+  <div class="arranger">
+    <p class="labelization">Valence: <span class="sub-text" id="prop36"></span></p>
+    <p class="labelization">Electro-negativity: <span class="sub-text" id="prop37"></span></p>
+    <p class="labelization">Electron Affinity: <span class="sub-text" id="prop38"></span></p>
+    <p class="labelization">Ionization Energies: <span class="sub-text" id="prop39"></span></p>
+    <p class="labelization">oxidization numbers: <span class="sub-text" id="prop40"></span></p>
+    <p class="labelization">Gas Atomic Multiplicities: <span class="sub-text" id="prop41"></span></p>
+    <p class="labelization">Radioactivity: <span class="sub-text" id="prop42"></span></p>
+    <p class="labelization">Half Life: <span class="sub-text" id="prop43"></span></p>
+    <p class="labelization">Lifetime: <span class="sub-text" id="prop44"></span></p>
+    <p class="labelization">Decay Mode: <span class="sub-text" id="prop45"></span></p>
+    <p class="labelization">Poisson Ratio: <span class="sub-text" id="prop46"></span></p>
+    <p class="labelization">Neutron Cross Section: <span class="sub-text" id="prop47"></span></p>
+    <p class="labelization">Neutron Mass Absorption: <span class="sub-text" id="prop48"></span></p>
+    <p class="labelization">DOT Hazard Class: <span class="sub-text" id="prop49"></span></p>
+  </div>
+  <div class="title">
+    <img src="images/icons/omega.png" alt="" class="imgIcon">
+    <p class="titleText">Numeric properties</p>
+  </div>
+  <div class="arranger">
+    <p class="labelization">DOT Numbers: <span class="sub-text" id="prop50"></span></p>
+    <p class="labelization">Adiabatic Index: <span class="sub-text" id="prop51"></span></p>
+    <p class="labelization">CAS Number: <span class="sub-text" id="prop52"></span></p>
+    <p class="labelization">CID Number: <span class="sub-text" id="prop53"></span></p>
+    <p class="labelization">Refractive Index: <span class="sub-text" id="prop54"></span></p>
+    <p class="labelization">RTECS Number: <span class="sub-text" id="prop55"></span></p>
+    <p class="labelization">Space Group Number: <span class="sub-text" id="prop56"></span></p>
+  </div>
+  <div class="title">
+    <img src="images/icons/electromagnet.png" alt="" class="imgIcon">
+    <p class="titleText">Electric/Magnatic properties</p>
+  </div>
+  <div class="arranger">
+    <p class="labelization">Electrical Type: <span class="sub-text" id="prop57"></span></p>
+    <p class="labelization">Electrical Conductivity: <span class="sub-text" id="prop58"></span></p>
+    <p class="labelization">Magnetic Type: <span class="sub-text" id="prop59"></span></p>
+    <p class="labelization">Mass Magnetic Susceptibility: <span class="sub-text" id="prop60"></span></p>
+    <p class="labelization">Molar Magnetic Susceptibility: <span class="sub-text" id="prop61"></span></p>
+    <p class="labelization">Volume Magnetic Susceptibility: <span class="sub-text" id="prop62"></span></p>
+    <p class="labelization">Superconducting Point: <span class="sub-text" id="prop63"></span></p>
+  </div>
+  <div class="title">
+    <img src="images/icons/crystal.png" alt="" class="imgIcon">
+    <p class="titleText">Appearance</p>
+  </div>
+  <div class="arranger">
+    <p class="labelization">Space Group Name: <span class="sub-text" id="prop64"></span></p>
+    <p class="labelization">Color: <span class="sub-text" id="prop65"></span></p>
+    <p class="labelization">code: <span class="sub-text" id="prop66"></span></p>
+    <p class="labelization">Crystal Structure: <span class="sub-text" id="prop67"></span></p>
+    <p class="labelization">Lattice Angles: <span class="sub-text" id="prop68"></span></p>
+    <p class="labelization">Lattice Constants: <span class="sub-text" id="prop69"></span></p>
+  </div>
+  <div class="title">
+    <img src="images/icons/universe.png" alt="" class="imgIcon">
+    <p class="titleText">Availability</p>
+  </div>
+  <div class="arranger">
+    <p class="labelization">Abundance in Earth's Crust: <span class="sub-text" id="prop70"></span>%</p>
+    <p class="labelization">Abundance in Humans: <span class="sub-text" id="prop71"></span>%</p>
+    <p class="labelization">Abundance in Meteorites: <span class="sub-text" id="prop72"></span>%</p>
+    <p class="labelization">Abundance in the Ocean: <span class="sub-text" id="prop73"></span>%</p>
+    <p class="labelization">Abundance in the Sun: <span class="sub-text" id="prop74"></span>%</p>
+    <p class="labelization">Abundance in the Universe: <span class="sub-text" id="prop75"></span>%</p>
+  </div>
+  <script src="element.js" type="module"></script>
+  <script src="data.js"></script>
+</body>
+</html>

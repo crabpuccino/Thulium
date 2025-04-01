@@ -1,25 +1,3 @@
-function scrollAnimation(hide,show,repeated){
-  const observer = new IntersectionObserver((entries => {
-    entries.forEach(entry => {
-      if (repeated) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add(show)
-        }else {
-          entry.target.classList.remove(show);}
-      }
-      else {
-        if (entry.isIntersecting) {
-          entry.target.classList.add(show)}}
-    });
-  }))
-
-  const hiddenElements = document.querySelectorAll(hide);
-  hiddenElements.forEach((el) => observer.observe(el));
-}
-
-scrollAnimation('.hidden-fade', 'show-fade', true);
-scrollAnimation('.hidden-pop-up', 'show-pop-up', false);
-
 //variables declaration zone! plz do not interfear
 let n = 0;
 const superNums = ['¹','²','³','⁴','⁵','⁶','⁷','⁸','⁹','⁰'];
@@ -36,6 +14,8 @@ const electronNumber = document.getElementById("electrons");
 const tierText = document.getElementById("tier");
 const errDisplay = document.getElementById("errDisplay");
 const group = document.getElementById("group");
+
+import { getProps } from './data.js';
 
 function superScript(num){
   while (/\d/.test(num)){
@@ -73,7 +53,7 @@ function getGroup(atomicNum){
   else if (tierText.textContent == 'F' && rowText.textContent == '7'){changeGroup('Actinides','#FF4500');}
   else if (nonMetals.includes(atomicNum)){changeGroup('Non-metals','#FF345E');}
   else if (semiMetals.includes(atomicNum)){changeGroup('Semi-metals','#BDC3C7');}
-  else {changeGroup('Other (post-transition) metals','#000000');}
+  else {changeGroup('Other (post-transition) metals','#75B1FF');}
 }
 
 function swap(){
@@ -209,10 +189,10 @@ function startAction(e){
     else {errDisplay.textContent = 'Unkown error! plz check your input';}
     rowText.textContent = n;
   getGroup(electronNumber.value);
+  getProps();
   }
 }
 
 electronNumber.onchange = function(){reset()}
 document.getElementById("eventHorizen").onclick = function(){startAction(Number(electronNumber.value));}
 document.getElementById("swap").onclick = function(){swap();}
-
