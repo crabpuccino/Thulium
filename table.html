@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icons/brandparent.png" />
+    <link rel="stylesheet" href="element.css" />
+    <title>Thulium</title>
+  </head>
+  <body>
+    <div class="load"></div>
+
+    <input type="checkbox" id="sidebar-active" />
+    <div class="nav-menu">
+      <label for="sidebar-active">
+        <img src="images/icons/close.png" alt="x" height="20" width="20" />
+      </label>
+      <a href="quantam.html" class="pages-mb">Bismuth</a>
+      <a href="#" class="pages-mb">Support</a>
+      <a href="#" class="pages-mb">Platinum</a>
+      <a href="element.html" class="pages-mb">Thulium</a>
+    </div>
+    <label for="sidebar-active" class="over-lay"></label>
+
+    <div class="mainTitle">
+      <a class="homing" href="index.html">
+        <img src="images/icons/brandparent.png" alt="69" height="55" />
+        <p>THULIUM</p>
+      </a>
+      <div class="mb-nav">
+        <label for="sidebar-active">
+          <img src="images/icons/menu.png" alt="" height="30" width="30" />
+        </label>
+      </div>
+      <div class="pc-nav">
+        <a href="quantam.html" class="pages">Bismuth</a>
+        <a href="#" class="pages">Support</a>
+        <a href="#" class="pages">Platinum</a>
+        <a href="element.html" class="pages">Thulium</a>
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="table-top">
+        <div class="groups">
+          <div class="group" id="cancel"></div>
+          <div class="group" id="c1">
+            1
+            <p>IA</p>
+          </div>
+          <div class="group" id="c2">
+            2
+            <p>IIA</p>
+          </div>
+          <div class="group" id="c3">
+            3
+            <p>IIIB</p>
+          </div>
+          <div class="group" id="c4">
+            4
+            <p>IVB</p>
+          </div>
+          <div class="group" id="c5">
+            5
+            <p>VB</p>
+          </div>
+          <div class="group" id="c6">
+            6
+            <p>VIB</p>
+          </div>
+          <div class="group" id="c7">
+            7
+            <p>VIIB</p>
+          </div>
+          <div class="group" id="c8">
+            8
+            <p>VIII</p>
+          </div>
+          <div class="group" id="c9">
+            9
+            <p>VIII</p>
+          </div>
+          <div class="group" id="c10">
+            10
+            <p>VIII</p>
+          </div>
+          <div class="group" id="c11">
+            11
+            <p>IB</p>
+          </div>
+          <div class="group" id="c12">
+            12
+            <p>IIB</p>
+          </div>
+          <div class="group" id="c13">
+            13
+            <p>IIIA</p>
+          </div>
+          <div class="group" id="c14">
+            14
+            <p>IVA</p>
+          </div>
+          <div class="group" id="c15">
+            15
+            <p>VA</p>
+          </div>
+          <div class="group" id="c16">
+            16
+            <p>VIA</p>
+          </div>
+          <div class="group" id="c17">
+            17
+            <p>VIIA</p>
+          </div>
+          <div class="group" id="c18">
+            18
+            <p>0</p>
+          </div>
+        </div>
+        <div class="wraper">
+          <div class="periods invs-grid">
+            <div class="period" id="p1">1</div>
+            <div class="period" id="p2">2</div>
+            <div class="period" id="p3">3</div>
+            <div class="period" id="p4">4</div>
+            <div class="period" id="p5">5</div>
+            <div class="period" id="p6">6</div>
+            <div class="period" id="p7">7</div>
+          </div>
+          <div class="s invs-grid">
+            <div class="elemental non-metal P1 C1">
+              <sup>1</sup>
+              <p>H</p>
+              <p class="name" id="ele1"></p>
+            </div>
+            <div></div>
+            <div class="elemental alkali-metal P2 C1">
+              <sup>3</sup>
+              <p>Li</p>
+              <p class="name" id="ele3"></p>
+            </div>
+            <div class="elemental alkaline-metal P2 C2">
+              <sup>4</sup>
+              <p>Be</p>
+              <p class="name" id="ele4"></p>
+            </div>
+            <div class="elemental alkali-metal P3 C1">
+              <sup>11</sup>
+              <p>Na</p>
+              <p class="name" id="ele11"></p>
+            </div>
+            <div class="elemental alkaline-metal P3 C2">
+              <sup>12</sup>
+              <p>Mg</p>
+              <p class="name" id="ele12"></p>
+            </div>
+            <div class="elemental alkali-metal P4 C1">
+              <sup>19</sup>
+              <p>K</p>
+              <p class="name" id="ele19"></p>
+            </div>
+            <div class="elemental alkaline-metal P4 C2">
+              <sup>20</sup>
+              <p>Ca</p>
+              <p class="name" id="ele20"></p>
+            </div>
+            <div class="elemental alkali-metal P5 C1">
+              <sup>37</sup>
+              <p>Rb</p>
+              <p class="name" id="ele37"></p>
+            </div>
+            <div class="elemental alkaline-metal P5 C2">
+              <sup>38</sup>
+              <p>Sr</p>
+              <p class="name" id="ele38"></p>
+            </div>
+            <div class="elemental alkali-metal P6 C1">
+              <sup>55</sup>
+              <p>Cs</p>
+              <p class="name" id="ele55"></p>
+            </div>
+            <div class="elemental alkaline-metal P6 C2">
+              <sup>56</sup>
+              <p>Ba</p>
+              <p class="name" id="ele56"></p>
+            </div>
+            <div class="elemental alkali-metal P7 C1">
+              <sup>87</sup>
+              <p>Fr</p>
+              <p class="name" id="ele87"></p>
+            </div>
+            <div class="elemental alkaline-metal P7 C2">
+              <sup>88</sup>
+              <p>Ra</p>
+              <p class="name" id="ele88"></p>
+            </div>
+          </div>
+
+          <div class="d invs-grid">
+            <div class="elemental transition-metal P4 C3">
+              <sup>21</sup>
+              <p>Sc</p>
+              <p class="name" id="ele21"></p>
+            </div>
+            <div class="elemental transition-metal P4 C4">
+              <sup>22</sup>
+              <p>Ti</p>
+              <p class="name" id="ele22"></p>
+            </div>
+            <div class="elemental transition-metal P4 C5">
+              <sup>23</sup>
+              <p>V</p>
+              <p class="name" id="ele23"></p>
+            </div>
+            <div class="elemental transition-metal P4 C6">
+              <sup>24</sup>
+              <p>Cr</p>
+              <p class="name" id="ele24"></p>
+            </div>
+            <div class="elemental transition-metal P4 C7">
+              <sup>25</sup>
+              <p>Mn</p>
+              <p class="name" id="ele25"></p>
+            </div>
+            <div class="elemental transition-metal P4 C8">
+              <sup>26</sup>
+              <p>Fe</p>
+              <p class="name" id="ele26"></p>
+            </div>
+            <div class="elemental transition-metal P4 C8">
+              <sup>27</sup>
+              <p>Co</p>
+              <p class="name" id="ele27"></p>
+            </div>
+            <div class="elemental transition-metal P4 C8">
+              <sup>28</sup>
+              <p>Ni</p>
+              <p class="name" id="ele28"></p>
+            </div>
+            <div class="elemental transition-metal P4 C9">
+              <sup>29</sup>
+              <p>Cu</p>
+              <p class="name" id="ele29"></p>
+            </div>
+            <div class="elemental transition-metal P4 C10">
+              <sup>30</sup>
+              <p>Zn</p>
+              <p class="name" id="ele30"></p>
+            </div>
+            <div class="elemental transition-metal P5 C3">
+              <sup>39</sup>
+              <p>Y</p>
+              <p class="name" id="ele39"></p>
+            </div>
+            <div class="elemental transition-metal P5 C4">
+              <sup>40</sup>
+              <p>Zr</p>
+              <p class="name" id="ele40"></p>
+            </div>
+            <div class="elemental transition-metal P5 C5">
+              <sup>41</sup>
+              <p>Nb</p>
+              <p class="name" id="ele41"></p>
+            </div>
+            <div class="elemental transition-metal P5 C6">
+              <sup>42</sup>
+              <p>Mo</p>
+              <p class="name" id="ele42"></p>
+            </div>
+            <div class="elemental transition-metal P5 C7">
+              <sup>43</sup>
+              <p>Tc</p>
+              <p class="name" id="ele43"></p>
+            </div>
+            <div class="elemental transition-metal P5 C8">
+              <sup>44</sup>
+              <p>Ru</p>
+              <p class="name" id="ele44"></p>
+            </div>
+            <div class="elemental transition-metal P5 C8">
+              <sup>45</sup>
+              <p>Rh</p>
+              <p class="name" id="ele45"></p>
+            </div>
+            <div class="elemental transition-metal P5 C8">
+              <sup>46</sup>
+              <p>Pd</p>
+              <p class="name" id="ele46"></p>
+            </div>
+            <div class="elemental transition-metal P5 C9">
+              <sup>47</sup>
+              <p>Ag</p>
+              <p class="name" id="ele47"></p>
+            </div>
+            <div class="elemental transition-metal P5 C10">
+              <sup>48</sup>
+              <p>Cd</p>
+              <p class="name" id="ele48"></p>
+            </div>
+            <div class="elemental lanthanoide P6">
+              <p class="name">57 to 71</p>
+              <p class="name">La-Lu</p>
+            </div>
+            <div class="elemental transition-metal P6 C4">
+              <sup>72</sup>
+              <p>Hf</p>
+              <p class="name" id="ele72"></p>
+            </div>
+            <div class="elemental transition-metal P6 C5">
+              <sup>73</sup>
+              <p>Ta</p>
+              <p class="name" id="ele73"></p>
+            </div>
+            <div class="elemental transition-metal P6 C6">
+              <sup>74</sup>
+              <p>W</p>
+              <p class="name" id="ele74"></p>
+            </div>
+            <div class="elemental transition-metal P6 C7">
+              <sup>75</sup>
+              <p>Re</p>
+              <p class="name" id="ele75"></p>
+            </div>
+            <div class="elemental transition-metal P6 C8">
+              <sup>76</sup>
+              <p>Os</p>
+              <p class="name" id="ele76"></p>
+            </div>
+            <div class="elemental transition-metal P6 C8">
+              <sup>77</sup>
+              <p>Ir</p>
+              <p class="name" id="ele77"></p>
+            </div>
+            <div class="elemental transition-metal P6 C8">
+              <sup>78</sup>
+              <p>Pt</p>
+              <p class="name" id="ele78"></p>
+            </div>
+            <div class="elemental transition-metal P6 C9">
+              <sup>79</sup>
+              <p>Au</p>
+              <p class="name" id="ele79"></p>
+            </div>
+            <div class="elemental transition-metal P6 C10">
+              <sup>80</sup>
+              <p>Hg</p>
+              <p class="name" id="ele80"></p>
+            </div>
+            <div class="elemental actinide P7">
+              <p class="name">89 to 103</p>
+              <p class="name">Ac-Lr</p>
+            </div>
+            <div class="elemental transition-metal P7 C4">
+              <sup>104</sup>
+              <p>Rf</p>
+              <p class="name" id="ele104"></p>
+            </div>
+            <div class="elemental transition-metal P7 C5">
+              <sup>105</sup>
+              <p>Db</p>
+              <p class="name" id="ele105"></p>
+            </div>
+            <div class="elemental transition-metal P7 C6">
+              <sup>106</sup>
+              <p>Sg</p>
+              <p class="name" id="ele106"></p>
+            </div>
+            <div class="elemental transition-metal P7 C7">
+              <sup>107</sup>
+              <p>Bh</p>
+              <p class="name" id="ele107"></p>
+            </div>
+            <div class="elemental transition-metal P7 C8">
+              <sup>108</sup>
+              <p>Hs</p>
+              <p class="name" id="ele108"></p>
+            </div>
+            <div class="elemental transition-metal P7 C8">
+              <sup>109</sup>
+              <p>Mt</p>
+              <p class="name" id="ele109"></p>
+            </div>
+            <div class="elemental transition-metal P7 C8">
+              <sup>110</sup>
+              <p>Ds</p>
+              <p class="name" id="ele110"></p>
+            </div>
+            <div class="elemental transition-metal P7 C9">
+              <sup>111</sup>
+              <p>Rg</p>
+              <p class="name" id="ele111"></p>
+            </div>
+            <div class="elemental transition-metal P7 C10">
+              <sup>112</sup>
+              <p>Cn</p>
+              <p class="name" id="ele112"></p>
+            </div>
+          </div>
+
+          <div class="p invs-grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="elemental noble-gas P1 C16">
+              <sup>2</sup>
+              <p>He</p>
+              <p class="name" id="ele2"></p>
+            </div>
+            <div class="elemental semi-metal P2 C11">
+              <sup>5</sup>
+              <p>B</p>
+              <p class="name" id="ele5"></p>
+            </div>
+            <div class="elemental non-metal P2 C12">
+              <sup>6</sup>
+              <p>C</p>
+              <p class="name" id="ele6"></p>
+            </div>
+            <div class="elemental non-metal P2 C13">
+              <sup>7</sup>
+              <p>N</p>
+              <p class="name" id="ele7"></p>
+            </div>
+            <div class="elemental non-metal P2 C14">
+              <sup>8</sup>
+              <p>O</p>
+              <p class="name" id="ele8"></p>
+            </div>
+            <div class="elemental halogen P2 C15">
+              <sup>9</sup>
+              <p>F</p>
+              <p class="name" id="ele9"></p>
+            </div>
+            <div class="elemental noble-gas P2 C16">
+              <sup>10</sup>
+              <p>Ne</p>
+              <p class="name" id="ele10"></p>
+            </div>
+            <div class="elemental other-metal P3 C11">
+              <sup>13</sup>
+              <p>Al</p>
+              <p class="name" id="ele13"></p>
+            </div>
+            <div class="elemental semi-metal P3 C12">
+              <sup>14</sup>
+              <p>Si</p>
+              <p class="name" id="ele14"></p>
+            </div>
+            <div class="elemental non-metal P3 C13">
+              <sup>15</sup>
+              <p>P</p>
+              <p class="name" id="ele15"></p>
+            </div>
+            <div class="elemental non-metal P3 C14">
+              <sup>16</sup>
+              <p>S</p>
+              <p class="name" id="ele16"></p>
+            </div>
+            <div class="elemental halogen P3 C15">
+              <sup>17</sup>
+              <p>Cl</p>
+              <p class="name" id="ele17"></p>
+            </div>
+            <div class="elemental noble-gas P3 C16">
+              <sup>18</sup>
+              <p>Ar</p>
+              <p class="name" id="ele18"></p>
+            </div>
+            <div class="elemental other-metal P4 C11">
+              <sup>31</sup>
+              <p>Ga</p>
+              <p class="name" id="ele31"></p>
+            </div>
+            <div class="elemental semi-metal P4 C12">
+              <sup>32</sup>
+              <p>Ge</p>
+              <p class="name" id="ele32"></p>
+            </div>
+            <div class="elemental semi-metal P4 C13">
+              <sup>33</sup>
+              <p>As</p>
+              <p class="name" id="ele33"></p>
+            </div>
+            <div class="elemental non-metal P4 C14">
+              <sup>34</sup>
+              <p>Se</p>
+              <p class="name" id="ele34"></p>
+            </div>
+            <div class="elemental halogen P4 C15">
+              <sup>35</sup>
+              <p>Br</p>
+              <p class="name" id="ele35"></p>
+            </div>
+            <div class="elemental noble-gas P4 C16">
+              <sup>36</sup>
+              <p>Kr</p>
+              <p class="name" id="ele36"></p>
+            </div>
+            <div class="elemental other-metal P5 C11">
+              <sup>49</sup>
+              <p>In</p>
+              <p class="name" id="ele49"></p>
+            </div>
+            <div class="elemental other-metal P5 C12">
+              <sup>50</sup>
+              <p>Sn</p>
+              <p class="name" id="ele50"></p>
+            </div>
+            <div class="elemental semi-metal P5 C13">
+              <sup>51</sup>
+              <p>Sb</p>
+              <p class="name" id="ele51"></p>
+            </div>
+            <div class="elemental semi-metal P5 C14">
+              <sup>52</sup>
+              <p>Te</p>
+              <p class="name" id="ele52"></p>
+            </div>
+            <div class="elemental halogen P5 C15">
+              <sup>53</sup>
+              <p>I</p>
+              <p class="name" id="ele53"></p>
+            </div>
+            <div class="elemental noble-gas P5 C16">
+              <sup>54</sup>
+              <p>Xe</p>
+              <p class="name" id="ele54"></p>
+            </div>
+            <div class="elemental other-metal P6 C11">
+              <sup>81</sup>
+              <p>Tl</p>
+              <p class="name" id="ele81"></p>
+            </div>
+            <div class="elemental other-metal P6 C12">
+              <sup>82</sup>
+              <p>Pb</p>
+              <p class="name" id="ele82"></p>
+            </div>
+            <div class="elemental other-metal P6 C13">
+              <sup>83</sup>
+              <p>Bi</p>
+              <p class="name" id="ele83"></p>
+            </div>
+            <div class="elemental semi-metal P6 C14">
+              <sup>84</sup>
+              <p>Po</p>
+              <p class="name" id="ele84"></p>
+            </div>
+            <div class="elemental halogen P6 C15">
+              <sup>85</sup>
+              <p>At</p>
+              <p class="name" id="ele85"></p>
+            </div>
+            <div class="elemental noble-gas P6 C16">
+              <sup>86</sup>
+              <p>Rn</p>
+              <p class="name" id="ele86"></p>
+            </div>
+            <div class="elemental other-metal P7 C11">
+              <sup>113</sup>
+              <p>Nh</p>
+              <p class="name" id="ele113"></p>
+            </div>
+            <div class="elemental other-metal P7 C12">
+              <sup>114</sup>
+              <p>Fl</p>
+              <p class="name" id="ele114"></p>
+            </div>
+            <div class="elemental other-metal P7 C13">
+              <sup>115</sup>
+              <p>Mc</p>
+              <p class="name" id="ele115"></p>
+            </div>
+            <div class="elemental other-metal P7 C14">
+              <sup>116</sup>
+              <p>Lv</p>
+              <p class="name" id="ele116"></p>
+            </div>
+            <div class="elemental halogen P7 C15">
+              <sup>117</sup>
+              <p>Ts</p>
+              <p class="name" id="ele117"></p>
+            </div>
+            <div class="elemental noble-gas P7 C16">
+              <sup>118</sup>
+              <p>Og</p>
+              <p class="name" id="ele118"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="f invs-grid">
+        <div class="elemental lanthanoide P6">
+          <sup>57</sup>
+          <p>La</p>
+          <p class="name" id="ele57"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>58</sup>
+          <p>Ce</p>
+          <p class="name" id="ele58"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>59</sup>
+          <p>Pr</p>
+          <p class="name" id="ele59"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>60</sup>
+          <p>Nd</p>
+          <p class="name" id="ele60"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>61</sup>
+          <p>Pm</p>
+          <p class="name" id="ele61"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>62</sup>
+          <p>Sm</p>
+          <p class="name" id="ele62"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>63</sup>
+          <p>Eu</p>
+          <p class="name" id="ele63"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>64</sup>
+          <p>Gd</p>
+          <p class="name" id="ele64"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>65</sup>
+          <p>Tb</p>
+          <p class="name" id="ele65"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>66</sup>
+          <p>Dy</p>
+          <p class="name" id="ele66"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>67</sup>
+          <p>Ho</p>
+          <p class="name" id="ele67"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>68</sup>
+          <p>Er</p>
+          <p class="name" id="ele68"></p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>69</sup>
+          <p>Tm</p>
+          <p class="name" id="ele69">THULIUM</p>
+        </div>
+        <div class="elemental lanthanoide P6">
+          <sup>70</sup>
+          <p>Yb</p>
+          <p class="name" id="ele70"></p>
+        </div>
+        <div class="elemental lanthanoide P6 C3">
+          <sup>71</sup>
+          <p>Lu</p>
+          <p class="name" id="ele71"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>89</sup>
+          <p>Ac</p>
+          <p class="name" id="ele89"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>90</sup>
+          <p>Th</p>
+          <p class="name" id="ele90"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>91</sup>
+          <p>Pa</p>
+          <p class="name" id="ele91"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>92</sup>
+          <p>U</p>
+          <p class="name" id="ele92"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>93</sup>
+          <p>Np</p>
+          <p class="name" id="ele93"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>94</sup>
+          <p>Pu</p>
+          <p class="name" id="ele94"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>95</sup>
+          <p>Am</p>
+          <p class="name" id="ele95"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>96</sup>
+          <p>Cm</p>
+          <p class="name" id="ele96"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>97</sup>
+          <p>Bk</p>
+          <p class="name" id="ele97"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>98</sup>
+          <p>Cf</p>
+          <p class="name" id="ele98"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>99</sup>
+          <p>Es</p>
+          <p class="name" id="ele99"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>100</sup>
+          <p>Fm</p>
+          <p class="name" id="ele100"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>101</sup>
+          <p>Md</p>
+          <p class="name" id="ele101"></p>
+        </div>
+        <div class="elemental actinide P7">
+          <sup>102</sup>
+          <p>No</p>
+          <p class="name" id="ele102"></p>
+        </div>
+        <div class="elemental actinide P7 C3">
+          <sup>103</sup>
+          <p>Lr</p>
+          <p class="name" id="ele103"></p>
+        </div>
+      </div>
+      <div class="select">
+        <button class="series alka" id="alkalis">Alkali metals</button>
+        <button class="series alkal" id="alkalines">Alkaline metals</button>
+        <button class="series non" id="nonMs">Non-metals</button>
+        <button class="series semi" id="semiMs">Semi-metals</button>
+        <button class="series halo" id="halogens">Halogens</button>
+        <button class="series noble" id="nobleGs">Noble gases</button>
+        <button class="series other" id="others">Other metals</button>
+        <button class="series transition" id="transitionMs">
+          Transition metals
+        </button>
+        <button class="series lanth" id="lanthanoides">Lanthanoides</button>
+        <button class="series acti" id="actinides">Actinides</button>
+        <button class="series noble" id="showAll">Show all</button>
+      </div>
+      <div class="select">
+        <button class="series alkal" id="e-name">English names</button>
+        <button class="series transition" id="l-name">Latin names</button>
+        <button class="series halo" id="a-name">Arabic names</button>
+        <button class="series noble" id="atomM">Atomic mass</button>
+        <button class="series other" id="valence">Valence</button>
+        <button class="series alka" id="atomR">Atomic radius</button>
+        <button class="series non" id="e-niga">Electronegativity</button>
+        <button class="series lanth" id="half">Half life</button>
+        <button class="series acti" id="year">Discovery year</button>
+        <button class="series semi" id="neu">Neutrons</button>
+      </div>
+    </div>
+    <script src="spot-light-series.js" type="module"></script>
+    <script src="data.js"></script>
+  </body>
+</html>
