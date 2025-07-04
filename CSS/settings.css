@@ -1,0 +1,65 @@
+.section{
+  height: 500px;
+  width: 100vw;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: left;
+  width: 100%;
+  margin-left: 60px;
+  position: relative;
+}
+
+div{
+  animation: fade-in 1.25s ease-in-out;
+}
+
+.themes::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid var(--text-prime);
+  width: 30px;
+  height: 30px;
+  left: -45px;
+  background-image: conic-gradient(var(--Non-metals), var(--Transition-metals), var(--Halogens), var(--Alkaline-Earth-metals), var(--Noble-gases));
+}
+
+hr {
+  border-color: var(--text-sec);
+}
+
+.theme {
+  width: 100%;
+  margin-left: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-right: 0;
+  font-size: 20px;
+  width: fit-content;
+}
+
+.radial {
+  margin-right: 16px;
+  margin-left: auto;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 3px solid var(--frist-color);
+  background-color: var(--prime-color);
+  cursor: pointer;
+  position: relative;
+  --state: block;
+}
+.radial::before{
+  content: '';
+  display: var(--state);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--frist-color);
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}

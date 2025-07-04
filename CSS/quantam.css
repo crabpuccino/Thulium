@@ -1,0 +1,111 @@
+body {
+  overflow-y: hidden;
+}
+
+.bismuth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 69px;
+  height: calc(100dvh - 181px);
+  width: 100%;
+  animation: fade-in 1s linear;
+}
+#show{
+  margin-bottom: 32px;
+  padding: 0;
+}
+.quantam {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+select,option{
+  background-color: var(--prime-color);
+  color: var(--text-prime);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.go {
+  width: clamp(32px, 10%, 64px);
+  height: clamp(30px, 12%, 32px);
+  border-radius: 16px;
+  align-self: center;
+  color: var(--frist-color);
+  position: relative;
+  cursor: pointer;
+}
+.go::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 16px;
+  background-image: linear-gradient(60deg, var(--frist-color), var(--ulti-clr));
+}
+
+.go:hover {
+  background-color: var(--prime-color);
+  font-weight: bold;
+}
+.go:hover::before{
+  animation: before-border-spin 0.3s infinite linear;
+}
+.go:active::before{
+  animation: before-border-spin 0.2s infinite linear;
+}
+
+@keyframes before-border-spin {
+  0%{background-image: linear-gradient(0deg, var(--frist-color), var(--ulti-clr))}
+  25%{background-image: linear-gradient(90deg, var(--frist-color), var(--ulti-clr))}
+  50%{background-image: linear-gradient(180deg, var(--frist-color), var(--ulti-clr))}
+  75%{background-image: linear-gradient(270deg, var(--frist-color), var(--ulti-clr))}
+  100%{background-image: linear-gradient(360deg, var(--frist-color), var(--ulti-clr))}
+}
+
+.suggestion {
+  width: 100%;
+  height: 128px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 12px;
+}
+
+.symbol {
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--frist-clr-lite);
+  margin-left: 12px;
+}
+.litter {
+  font-size: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: calc(100% - 134px);
+  justify-content: center;
+}
+
+#error {
+  color: var(--err-clr);
+}

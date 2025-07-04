@@ -1,0 +1,150 @@
+.frist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.num-geter {
+  animation: pop-up 1.5s;
+  display: block;
+  margin: 16px;
+  width: 80%;
+  min-width: 300px;
+  height: 4vh;
+  min-height: 20px;
+  background-color: var(--frist-color);
+  color: var(--text-prime);
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.15s;
+}
+.num-geter::placeholder {
+  color: var(--text-prime);
+}
+.num-geter:hover {
+  box-shadow: rgba(0,0,0,0.15) 15px 15px;
+}
+.num-geter:focus {
+  box-shadow: rgba(0,0,0,0.15) 15px 15px;
+  outline: none;
+}
+
+.go {
+  animation: pop-up 1.5s;
+  margin: 20px;
+  width: 10vw;
+  min-width: 40px;
+  height: 4vh;
+  min-height: 20px;
+  background-color: var(--frist-color);
+  color: var(--text-prime);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.15s;
+}
+.go:hover {
+  background-color: var(--prime-color);
+  color: var(--frist-color);
+  border: solid var(--frist-color) 2px;
+  cursor: pointer;
+}
+.go:active {
+  opacity: 0.5;
+}
+
+.internal {
+  margin: 20px 20px 20px 3px;
+  animation: fade-in 3s;
+}
+
+.labelization {
+  text-align: left;
+  margin: 10px;
+  animation: pop-up 1.5s;
+}
+
+.err {
+  text-align: left;
+  color: var(--err-clr);
+}
+
+.arranger {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  animation: title-pop-to-right 1.5s;
+  background-color: var(--frist-color);
+  color: var(--text-prime);
+  padding: 11px;
+  margin-top: 26px;
+  margin-bottom: 6px;
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  min-width: 100px;
+  direction: ltr;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.swap {
+  animation: pop-up 1.5s;
+  background-color: var(--frist-color);
+  align-self: center;
+  color: var(--text-prime);
+  font-weight: bold;
+  border: none;
+  height: 4vh;
+  min-height: 20px;
+  max-height: 30px;
+  width: 10vw;
+  min-width: 50px;
+  max-width: 65px;
+  border-radius: 10px;
+  transition: all 0.15s;
+}
+.swap:hover {
+  cursor: pointer;
+  border: var(--frist-color) solid 2px;
+  background-color: var(--prime-color);
+  color: var(--frist-color);
+}
+.swap:active {
+  opacity: 0.6;
+}
+
+.imgIcon{
+  display: inline;
+  height: 32px;
+  width: 32px;
+}
+
+.titleText {
+  display: inline;
+}
+
+.mainImg {
+  animation: pop-up 1.5s;
+  display: flex;
+  align-items: center;
+  margin: 6px;
+  margin-top: 110px;
+  width: 300px;
+}
+
+svg {
+  height: 32px;
+  width: 32px;
+}
+
+.back{
+  background-color: var(--text-prime);
+}
